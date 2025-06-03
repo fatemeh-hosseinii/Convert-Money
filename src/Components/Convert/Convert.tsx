@@ -25,7 +25,6 @@ const Convert: React.FC = () => {
       <input
         type="number"
         placeholder="عدد را وارد کنید"
-        value={value}
         onChange={(e) => {
           setValue(e.target.value);
           setResult(null);
@@ -34,7 +33,6 @@ const Convert: React.FC = () => {
       />
 
       <select
-        value={type}
         onChange={(e) => {
           setType(e.target.value);
           setResult(null);
