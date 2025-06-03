@@ -1,0 +1,15 @@
+@import "tailwindcss";
+body {
+    direction: rtl;
+    font-family: "iranyekan", sans-serif;
+  }
+  
+  @font-face {
+    font-family: "iranyekan";
+    src: url("/assets/Fonts/Qs_Iranyekan.ttf") format("truetype");
+  }
+  
+  
+  * {
+    font-family: iranyekan, sans-serif;
+  }
