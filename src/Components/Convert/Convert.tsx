@@ -39,7 +39,6 @@ const Convert: React.FC = () => {
         onChange={(e) => {
           setType(e.target.value);
           setResult(null);
-          setValue("0")
         }}
         className="w-full p-2 mb-4 border border-gray-300 rounded focus:ring-2 focus:ring-blue-400"
       >
