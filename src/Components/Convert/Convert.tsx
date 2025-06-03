@@ -5,7 +5,6 @@ const Convert: React.FC = () => {
   const [value, setValue] = useState<string>("");
   const [type, setType] = useState<string>("dollarToRial");
   const [result, setResult] = useState<number | null>(null);
-
   const handleConvert = () => {
     const num = parseFloat(value);
     if (!num || num <= 0) {
@@ -20,7 +19,7 @@ const Convert: React.FC = () => {
     }
   };
   return (
-    <div className="w-full mx-auto mt-10 p-5 border border-gray-300 rounded-lg bg-[#f3f3f3] shadow-md max-w-md">
+    <div className="w-full mx-auto mt-10 p-5 border border-gray-300 rounded-lg  shadow-md max-w-md">
       <h2 className="text-center text-2xl font-bold mb-6">تبدیل دلار و ریال</h2>
 
       <input
@@ -50,7 +49,7 @@ const Convert: React.FC = () => {
         onClick={handleConvert}
         className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded transition-colors duration-200"
       >
-        تبدیل کن
+        تبدیل 
       </button>
 
       {result !== null && (
